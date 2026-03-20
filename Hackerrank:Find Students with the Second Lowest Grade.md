@@ -27,10 +27,26 @@ To write a Python program to:
 
 ## 💻  Program
 
-Add Code Here
+```
+N=int(input())
+students=[]
+for i in range(N):
+    name = input()
+    score =float(input())
+    students.append([name,score])
+    
+scores = sorted(set(score for _, score in students))
+second_lowest_score=scores[1]
+
+second_lowest_students= sorted([name for name,score in students if score == second_lowest_score])
+
+for students in second_lowest_students:
+    print(students)
+```
 
 ## Output
+<img width="394" height="403" alt="image" src="https://github.com/user-attachments/assets/aa86517f-b8d4-484b-8562-6762bbe42c7d" />
 
 ## Result
-
+Thus, the python program to find students with the second lowest grade has been executed successfully.
 
